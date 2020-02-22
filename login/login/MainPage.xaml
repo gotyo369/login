@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="login.MainPage">
+
+    <StackLayout BindingContext="login">
+        <Label Text="Usuario:" AnchorX="2" AnchorY="2" FontSize="Body" TextColor="Accent" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+        <Entry x:Name="usuario" Placeholder="usuario@ejemplo.com" />
+        <Label Text="Contraseña:" AnchorX="2" AnchorY="2" FontSize="Body" TextColor="Accent" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+        <Entry x:Name="contraseña" IsPassword="true" Placeholder="Contraseña" />
+        <Button x:Name="Iniciar" Text="Iniciar Sesión" Clicked="Iniciar_Clicked" BackgroundColor="AliceBlue" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>
